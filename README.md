@@ -1,0 +1,2 @@
+# StringUtils
+Lightweight string library
