@@ -19,13 +19,13 @@ target_link_libraries(${PROJECT_NAME} StringUtils)
 Example of usage:
 ```C
 printf("Is string empty: %s\n", isStringEmpty("") ? "Yes" : "No");  // Yes
-printf("Is string empty: %s\n", isStringNotEmpty(" ") ? "Yes" : "No");  // Yes
+printf("Is string not empty: %s\n", isStringNotEmpty(" ") ? "Yes" : "No");  // Yes
 printf("Is string empty: %s\n\n", isStringEmpty(NULL) ? "Yes" : "No");  // Yes
 
 printf("Is string blank: %s\n", isStringBlank("   ") ? "Yes" : "No");  // Yes
 printf("Is string blank: %s\n", isStringBlank("\t  \r") ? "Yes" : "No");  // Yes
 printf("Is string blank: %s\n", isStringBlank(NULL) ? "Yes" : "No");  // Yes
-printf("Is string blank: %s\n\n", isStringNotBlank("   t") ? "Yes" : "No");  // Yes
+printf("Is string not blank: %s\n\n", isStringNotBlank("   t") ? "Yes" : "No");  // Yes
 
 printf("Have substring: %s\n\n", containsString("Hello world!", "world") ? "Yes" : "No");  // Yes
 
