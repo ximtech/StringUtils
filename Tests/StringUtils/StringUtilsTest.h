@@ -1,7 +1,7 @@
 #pragma once
 
 #include "BaseTestTemplate.h"
-#include "StringUtils.h"
+#include <StringUtils.h>
 
 static const char TEST_STRING[] = "0,CONNECT\n 1,CONNECT\n\n +IPD,1,497:GET /api/test HTTP/1.1\nHost: 192.168.53.117\nConnection: keep-alive\n";
 static const char TEST_STRING_LOWER[] = "0,connect\n 1,connect\n\n +ipd,1,497:get /api/test http/1.1\nhost: 192.168.53.117\nconnection: keep-alive\n";
