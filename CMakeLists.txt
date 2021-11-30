@@ -21,7 +21,3 @@ install(TARGETS ${PROJECT_NAME}
 install(EXPORT ${PROJECT_NAME}Export
         FILE ${PROJECT_NAME}-config.cmake
         DESTINATION ${CMAKE_INSTALL_PREFIX}/lib/${PROJECT_NAME})
-
-install(DIRECTORY .
-        DESTINATION .
-        PATTERN "Tests/" EXCLUDE)
