@@ -24,4 +24,4 @@ install(EXPORT ${PROJECT_NAME}Export
 
 install(DIRECTORY .
         DESTINATION .
-        PATTERN "Tests" EXCLUDE)
+        PATTERN "Tests/" EXCLUDE)
