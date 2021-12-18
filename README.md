@@ -1,4 +1,7 @@
 # StringUtils
+
+[![tests](https://github.com/ximtech/StringUtils/actions/workflows/cmake-ci.yml/badge.svg)](https://github.com/ximtech/StringUtils/actions/workflows/cmake-ci.yml)
+
 **STM32** Utilities and tools for working with Strings.
 
 ### Features
