@@ -2,7 +2,7 @@
 
 
 bool isStringEmpty(char const *string) {
-    return string == NULL || strlen(string) == 0;
+    return string == NULL || string[0] == '\0';
 }
 
 bool isStringNotEmpty(char const *string) {
@@ -10,12 +10,12 @@ bool isStringNotEmpty(char const *string) {
 }
 
 bool isStringBlank(char const *string) {
-    uint32_t stringLength;
-    if (string != NULL && (stringLength = strlen(string)) != 0) {
-        for (uint32_t i = 0; i < stringLength; i++) {
-            if (!isspace(string[i])) {
+    if (isStringNotEmpty(string)) {
+        while (isStringNotEmpty(string)) {
+            if (!isspace(*string)) {
                 return false;
             }
+            string++;
         }
         return true;
     }
