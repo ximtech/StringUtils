@@ -10,14 +10,11 @@ bool isStringNotEmpty(char const *string) {
 }
 
 bool isStringBlank(char const *string) {
-    if (isStringNotEmpty(string)) {
-        while (isStringNotEmpty(string)) {
-            if (!isspace(*string)) {
-                return false;
-            }
-            string++;
+    while (isStringNotEmpty(string)) {
+        if (!isspace(*string)) {
+            return false;
         }
-        return true;
+        string++;
     }
     return true;
 }
